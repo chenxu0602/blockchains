@@ -3,6 +3,7 @@ require("dotenv").config();
 require("./tasks/block-number");
 require("solidity-coverage");
 require("@nomicfoundation/hardhat-verify");
+require("hardhat-gas-reporter");
 
 const SEPOLIA_RPC_URL = process.env.SEPOLIA_PRC_URL;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
@@ -28,7 +29,7 @@ module.exports = {
   etherscan: {
     apiKey: ETHERSCAN_API_KEY,
   },
-  gasReport: {
+  gasReporter: {
     enabled: true,
     outputFile: "gas-report.txt",
     noColors: true,

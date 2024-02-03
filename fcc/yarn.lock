@@ -2258,6 +2258,11 @@ handlebars@^4.0.1:
   optionalDependencies:
     uglify-js "^3.1.4"
 
+hardhat-gas-report@^0.0.1-security:
+  version "0.0.1-security"
+  resolved "https://registry.yarnpkg.com/hardhat-gas-report/-/hardhat-gas-report-0.0.1-security.tgz#b4ff0b469e8a866c2cce72f7bd9bc8e569c59838"
+  integrity sha512-QE8b37W60+2OFzeMPbPHLFhGSGGHmrMgnCVq0dq1sZ9plyWa25ajLT/Yek1JZTuT/O5/KWadVKyqrnvncDpFlg==
+
 hardhat-gas-reporter@^1.0.8:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/hardhat-gas-reporter/-/hardhat-gas-reporter-1.0.10.tgz#ebe5bda5334b5def312747580cd923c2b09aef1b"
