@@ -8,6 +8,7 @@ artifacts
 # TypeChain files
 typechain
 typechain-types
+deployements
 
 # solidity-coverage files
 coverage
