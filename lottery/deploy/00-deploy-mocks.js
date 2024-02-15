@@ -7,6 +7,7 @@ const GAS_PRICE_LINK = 1e9 // link per gas, is this the gas lane? // 0.000000001
 module.exports = async function ({ getNamedAccounts, deployments }) {
     const { deploy, log } = deployments;
     const { deployer } = await getNamedAccounts();
+    const args = [BASE_FEE, GAS_PRICE_LINK];
 
     const chainId = network.config.chainId
 
@@ -16,7 +17,7 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
         await deploy("VRFCoordinatorV2Mock", {
             from: deployer,
             log: true,
-            args: [BASE_FEE, GAS_PRICE_LINK],
+            args: args,
         })
 
         log("Mocks Deployed!")
